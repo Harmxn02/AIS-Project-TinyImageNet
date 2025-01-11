@@ -1,0 +1,2 @@
+Model,Top-1 (No Attack),Top-5 (No Attack),Top-1 (FGSM Attack),Top-5 (FGSM Attack),Top-1 (PGD Attack),Top-5 (PGD Attack),Top-1 (CW Attack),Top-5 (CW Attack),Top-1 (Defense FGSM),Top-5 (Defense FGSM),Top-1 (Defense PGD),Top-5 (Defense PGD),Top-1 (Defense CW),Top-5 (Defense CW)
+ResNet18,0.76,0.9324,0.1514,0.3384,0.0018,0.0226,0.1104,0.4388,0.9186,0.9786,0.5632,0.7968,0.9544,0.992
