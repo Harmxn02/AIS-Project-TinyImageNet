@@ -44,6 +44,17 @@ We chose three attack methods to evaluate the robustness of the models. The thre
 
 We noticed that the PGD attack was the most effective attack method. In the case of VGG16 the Top-1 error rate increased by 455%, and the Top-5 error rate increased by 1752%.
 
+Visually, the impact of an FGSM attack can be seen in the following graphs:
+
+| Animal            | Baseline                                                                    | FGSM                                                                |
+| ----------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| Goldfish          | ![Goldfish baseline](./public/Adversarial_Attack/baseline-goldfish.svg)     | ![Goldfish FGSM](./public/Adversarial_Attack/fgsm-goldfish.svg)     |
+| Tench             | ![Tench baseline](./public/Adversarial_Attack/baseline-tench.svg)           | ![Tench FGSM](./public/Adversarial_Attack/fgsm-tench.svg)           |
+| Tiger shark       | ![Tigershark baseline](./public/Adversarial_Attack/baseline-tigershark.svg) | ![Tigershark FGSM](./public/Adversarial_Attack/fgsm-tigershark.svg) |
+| Great white shark | ![GWD baseline](./public/Adversarial_Attack/baseline-gws.svg)               | ![GWS FGSM](./public/Adversarial_Attack/fgsm-gws.svg)               |
+
+You can see that the FGSM attack has a significant impact on the model's predictions. The model's confidence is reduced. The model is more likely to predict multiple classes instead of just one.
+
 ## Increasing the robustness of the models by implementing adversarial training
 
 **Part of: [implementing_defensive_techniques.ipynb](./implementing_defensive_techniques.ipynb)**
