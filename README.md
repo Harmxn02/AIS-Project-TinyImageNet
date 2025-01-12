@@ -10,7 +10,9 @@
 
 [project overview goes here]
 
-## Evaluating pretrained models prior to adding noise
+## Evaluating pretrained models prior to implementing adversarial attacks
+
+**Part of: [evaluating_pretrained_models.ipynb](./evaluating_pretrained_models.ipynb)**
 
 We started with evaluating several pre-trained models on our dataset to see how they perform reguraly. We used the weights that were optimised for ImageNet. As expected the pre-trained models performed pretty well.
 
@@ -27,3 +29,31 @@ Top-1 and Top-5 errors are the metrics we decided to use to evaluate the perform
 For ResNet18, the model's top prediction is incorrect 24% of the time, and the correct class is not within the top 5 predictions 6.76% of the time.
 
 For ResNet50, the model's top prediction is incorrect 13.24% of the time, and the correct class is not within the top 5 predictions 1.96% of the time.
+
+## Attacking the models
+
+**Part of: [implementing_defensive_techniques.ipynb](./implementing_defensive_techniques.ipynb)**
+
+We chose three attack methods to evaluate the robustness of the models. The three methods are:
+
+- Fast Gradient Sign Method (FGSM)
+- Projected Gradient Descent (PGD)
+- Carlini-Wagner (CW)
+
+We noticed that the PGD attack was the most effective attack method. In the case of VGG16 the Top-1 error rate increased by 455%, and the Top-5 error rate increased by 1752%.
+
+## Increasing the robustness of the models by implementing adversarial training
+
+**Part of: [implementing_defensive_techniques.ipynb](./implementing_defensive_techniques.ipynb)**
+
+We implemented adversarial training to increase the robustness of the models. In most cases, the adversarial training increased the robustness of the models.
+
+For ResNet18 and ResNet50, the adversarial training improved the model's performance beyond the baseline performance (without attack), for the FGSM and CW attacks. For the PGD attack, the adversarial training did not improve the model's performance as much, and it was actually worse than the baseline performance.
+
+Adversarial training did not seem to have an impact on the performance of VGG16, because it ended up performing worse than the performance of the model impacted by the adversarial attacks.
+
+## Results
+
+Still a work in progress. Some fields are empty, and some fields show weird results (VGG16 is completely terrible after adversarial training).
+
+![Heatmap of model performances](./public/evaluation-heatmap.png)
