@@ -3,8 +3,10 @@
 ## Sections
 
 1. Project overview
-1. Evaluating pretrained models prior to adding noise
-1. Adding noise with FGSM
+1. Evaluating pretrained models prior to implementing adversarial attacks
+1. Attacking the models
+1. Increasing the robustness of the models by implementing adversarial training
+1. Results
 
 ## Project overview
 
