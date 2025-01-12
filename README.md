@@ -46,12 +46,12 @@ We noticed that the PGD attack was the most effective attack method. In the case
 
 Visually, the impact of an FGSM attack can be seen in the following graphs:
 
-| Animal            | Baseline                                                                    | FGSM                                                                |
-| ----------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| Goldfish          | ![Goldfish baseline](./public/Adversarial_Attack/baseline-goldfish.svg)     | ![Goldfish FGSM](./public/Adversarial_Attack/fgsm-goldfish.svg)     |
-| Tench             | ![Tench baseline](./public/Adversarial_Attack/baseline-tench.svg)           | ![Tench FGSM](./public/Adversarial_Attack/fgsm-tench.svg)           |
-| Tiger shark       | ![Tigershark baseline](./public/Adversarial_Attack/baseline-tigershark.svg) | ![Tigershark FGSM](./public/Adversarial_Attack/fgsm-tigershark.svg) |
-| Great white shark | ![GWD baseline](./public/Adversarial_Attack/baseline-gws.svg)               | ![GWS FGSM](./public/Adversarial_Attack/fgsm-gws.svg)               |
+| Baseline                                                                    | FGSM                                                                |
+| --------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| ![Goldfish baseline](./public/Adversarial_Attack/baseline-goldfish.svg)     | ![Goldfish FGSM](./public/Adversarial_Attack/fgsm-goldfish.svg)     |
+| ![Tench baseline](./public/Adversarial_Attack/baseline-tench.svg)           | ![Tench FGSM](./public/Adversarial_Attack/fgsm-tench.svg)           |
+| ![Tigershark baseline](./public/Adversarial_Attack/baseline-tigershark.svg) | ![Tigershark FGSM](./public/Adversarial_Attack/fgsm-tigershark.svg) |
+| ![GWD baseline](./public/Adversarial_Attack/baseline-gws.svg)               | ![GWS FGSM](./public/Adversarial_Attack/fgsm-gws.svg)               |
 
 You can see that the FGSM attack has a significant impact on the model's predictions. The model's confidence is reduced. The model is more likely to predict multiple classes instead of just one.
 
