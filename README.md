@@ -16,6 +16,14 @@
 
 **Part of: [evaluating_pretrained_models.ipynb](./evaluating_pretrained_models.ipynb)**
 
+We chose to evaluate the performance of the following pre-trained models:
+
+- ResNet18
+- ResNet50
+- ResNet152
+- VGG16
+- VGG19
+
 We started with evaluating several pre-trained models on our dataset to see how they perform reguraly. We used the weights that were optimised for ImageNet. As expected the pre-trained models performed pretty well.
 
 Top-1 and Top-5 errors are the metrics we decided to use to evaluate the performance of the pre-trained classification models.
