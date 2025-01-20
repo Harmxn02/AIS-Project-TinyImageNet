@@ -1,5 +1,7 @@
 # AI & Security Project
 
+<https://github.com/Harmxn02/AIS-Project-TinyImageNet/>
+
 ## Sections
 
 1. Project overview
@@ -10,7 +12,16 @@
 
 ## Project overview
 
-[project overview goes here]
+In this project, we aim to explore the robustness of various pre-trained models against adversarial attacks and improve their resilience through adversarial training. We focus on models trained on the TinyImageNet dataset, a smaller subset of the ImageNet dataset, which is commonly used for benchmarking in the field of computer vision.
+
+Our objectives are as follows:
+
+1. Evaluate the performance of pre-trained models on the TinyImageNet dataset.
+2. Implement and analyze the effectiveness of different adversarial attack methods.
+3. Enhance the robustness of the models by applying adversarial training techniques.
+4. Compare the performance of the models before and after adversarial training.
+
+By the end of this project, we aim to provide insights into the vulnerabilities of popular neural network architectures and propose methods to mitigate these weaknesses, thereby contributing to the field of AI security.
 
 ## Evaluating pretrained models prior to implementing adversarial attacks
 
